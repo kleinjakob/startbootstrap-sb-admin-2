@@ -50,7 +50,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><i class="fa fa-user-md"></i> KAVtimekeeper</a>
+                <a class="navbar-brand" href="index.html">
+                    <i class="text-primary fa fa-user-md fa-lg fa-fw"></i>
+                    KAVtimekeeper
+                </a>
             </div>
             <!-- /.navbar-header -->
 
@@ -380,23 +383,113 @@
                 <!-- /.row -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="custom-calendar-wrap custom-calendar-full">
-                            <div class="custom-header clearfix">
-                                <h2>Kalender</h2>
-                                <h3 class="custom-month-year">
-                                    <span id="custom-month" class="custom-month"></span>
-                                    <span id="custom-year" class="custom-year"></span>
-                                    <nav>
-                                        <span id="custom-prev" class="custom-prev"><i class="fa fa-caret-left"></i></span>
-                                        <span id="custom-next" class="custom-next"><i class="fa fa-caret-right"></i></span>
-                                        <span id="custom-current" class="custom-current" title="Gehe zum aktuellen Datum"><i class="fa fa-rotate-270 fa-reply"></i></span>
-                                    </nav>
-                                </h3>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-calendar fa-fw"></i>
+                                Kalender
+                                <span id="custom-month" class="custom-month"></span>
+                                <span id="custom-year" class="custom-year"></span>
+                                <div class="pull-right btn-toolbar">
+                                    <div class="btn-group">
+                                        <div id="custom-prev" class="btn btn-default btn-xs" title="Ein Monat zurück">
+                                            <i class="fa fa-caret-left fa-fw"></i>
+                                        </div>
+                                        <div id="custom-next" class="btn btn-default btn-xs" title="Ein Monat vor">
+                                            <i class="fa fa-caret-right fa-fw"></i>
+                                        </div>
+                                    </div>
+                                    <div id="custom-current" class="btn btn-default btn-xs" title="Gehe zum aktuellen Datum">
+                                        <i class="fa fa-rotate-270 fa-reply fa-fw"></i>
+                                    </div>
+                                </div>
                             </div>
+                            <!--<div class="panel-body">
+                                <p>Ein Kalender zum testen.</p>    
+                            </div>-->
                             <div id="calendar" class="fc-calendar-container"> </div>
                         </div>
                     </div>
                     <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-money fa-fw"></i> Payment Received
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Motto des Tages
+                        </div>
+                        <div class="panel-body">
+                            <blockquote>
+                                <p>Dass der Arbeiter für seine Arbeit auch einen Lohn haben muss, ist eine Theorie, die heute allgemein fallen gelassen worden ist.</p>
+                                <small>
+                                    <cite title="Kurt Tucholsky: Kurzer Abriß der Nationalökonomie">
+                                    <a href="http://gutenberg.spiegel.de/buch/16-satiren-7810/8">
+                                    Kurt Tucholsky
+                                    </a>
+                                    </cite>
+                                </small>
+                            </blockquote>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    </div>
                 </div>
                 <!-- /.row -->
             </div>
@@ -417,6 +510,52 @@
     jQuery(document).ready(function() {
       jQuery("time.timeago").timeago();
     });
+    </script>
+    <script>
+/**
+ * Get the ISO week date week number
+ */
+/* http://techblog.procurios.nl/k/news/view/33796/14863/calculate-iso-8601-week-and-year-in-javascript.html*/
+Date.prototype.getWeek = function () {
+	// Create a copy of this date object
+	var target  = new Date(this.valueOf());
+
+	// ISO week date weeks start on monday
+	// so correct the day number
+	var dayNr   = (this.getDay() + 6) % 7;
+
+	// ISO 8601 states that week 1 is the week
+	// with the first thursday of that year.
+	// Set the target date to the thursday in the target week
+	target.setDate(target.getDate() - dayNr + 3);
+
+	// Store the millisecond value of the target date
+	var firstThursday = target.valueOf();
+
+	// Set the target to the first thursday of the year
+	// First set the target to january first
+	target.setMonth(0, 1);
+	// Not a thursday? Correct the date to the next thursday
+	if (target.getDay() != 4) {
+		target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
+	}
+
+	// The weeknumber is the number of weeks between the 
+	// first thursday of the year and the thursday in the target week
+	return 1 + Math.ceil((firstThursday - target) / 604800000); // 604800000 = 7 * 24 * 3600 * 1000
+}
+
+/**
+* Get the ISO week date year number
+*/
+Date.prototype.getWeekYear = function () 
+{
+	// Create a new date object for the thursday of this week
+	var target	= new Date(this.valueOf());
+	target.setDate(target.getDate() - ((this.getDay() + 6) % 7) + 3);
+	
+	return target.getFullYear();
+}
     </script>
 
     <!-- jQuery Plugin: Calendario -->
@@ -462,6 +601,13 @@
             } );
             */
         
+        
+                  cal.setData( {
+                    '06-29-2015' : '<div class="badge">27</div>',
+                    '07-06-2015' : '<div class="badge">28</div>',
+                    '07-13-2015' : '<div class="badge">29</div>'
+                  } );
+
         });
     </script>
 
